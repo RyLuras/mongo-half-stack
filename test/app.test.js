@@ -2,7 +2,6 @@ require('dotenv').config();
 const request = require('supertest');
 const app = require('../lib/app');
 const Spies = require('../lib/models/Spies');
-const Villains = require('../lib/models/Villains');
 
 describe('Spies and Villains', () => {
     const spies = [
@@ -76,11 +75,6 @@ describe('Spies and Villains', () => {
                     vehicle: 'Love Boat'
                 });
             });
-
-
-
-
-
     });
 
     it('returns 404 when there is no method', () => {
